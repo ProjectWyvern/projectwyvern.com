@@ -3,13 +3,16 @@
 <div class="header">
 <div class="header-inner">
 <img class="thumb" src="/img/thumb.png" />
-<div class="header-title">
+<div class="header-title hidden-xs-only">
+Project Wyvern
+</div>
+<div class="header-title-sm hidden-sm-and-up">
 Project Wyvern
 </div>
 <div class="header-links">
-<router-link class="header-link" to="/"><v-icon large>home</v-icon></router-link>
-<router-link class="header-link" to="/about"><v-icon large>help</v-icon></router-link>
-<router-link class="header-link" to="/contact"><v-icon large>mail</v-icon></router-link>
+<router-link class="header-link" to="/"><v-icon medium>home</v-icon></router-link>
+<router-link class="header-link" to="/about"><v-icon medium>help</v-icon></router-link>
+<router-link class="header-link" to="/contact"><v-icon medium>mail</v-icon></router-link>
 </div>
 </div>
 </div>
@@ -19,7 +22,7 @@ Project Wyvern
 </div>
 <div class="app-footer">
 <div class="app-footer-inner">
-<div class="app-footer-left">
+<div class="app-footer-left hidden-xs-only">
 <img class="app-footer-thumb" src="/img/thumb-large.png" />
 <div class="app-footer-left-bottom">
 <div class="app-footer-left-bottom-top">Project Wyvern</div>
@@ -66,6 +69,7 @@ export default {
 
 <style>
 html, body {
+  background: #000;
   width: 100%;
   height: 100%;
   padding: 0;
@@ -115,7 +119,7 @@ a:visited {
 }
 
 .header-inner {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -132,7 +136,17 @@ a:visited {
   font-weight: bold;
 }
 
+.header-title-sm {
+  height: 100px;
+  line-height: 100px;
+  display: inline-block;
+  font-size: 1.3em;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
 .thumb {
+  margin-left: 20px;
   position: relative;
   top: 13px;
   margin-right: 20px;
@@ -140,6 +154,7 @@ a:visited {
 }
 
 .header-links {
+  margin-right: 1em;
   display: inline-block;
   float: right;
   line-height: 100px;
@@ -159,7 +174,7 @@ a:visited {
 }
 
 .app-footer-inner {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -170,7 +185,8 @@ a:visited {
 }
 
 .app-footer-left {
-  width: 200px;
+  width: 220px;
+  padding-left: 1em;
   display: inline-block;
 }
 
@@ -188,6 +204,7 @@ a:visited {
 }
 
 .app-footer-right {
+  padding-right: 2em;
   float: right;
 }
 

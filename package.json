@@ -3,6 +3,7 @@
     "poi": "^9.5.5"
   },
   "dependencies": {
+    "mobile-detect": "^1.4.0",
     "seriously": "^1.0.0",
     "vue": "^2.5.13",
     "vue-analytics": "^5.7.1",

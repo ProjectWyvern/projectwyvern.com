@@ -5,7 +5,7 @@
 <img src="/img/logo.svg" id="logo" style="display: none; height: 100%; width: 100%;" />
 </div>
 <div id="center">
-<div class="buttons" id="buttons">
+<div class="buttons hidden-xs-only" id="buttons">
 <a href="https://dao.projectwyvern.com" target="_blank"><v-btn class="btn" id="dao" color="primary">DAO</v-btn></a>
 <a href="https://exchange.projectwyvern.com" target="_blank"><v-btn class="btn" id="exchange" color="primary">Exchange</v-btn></a>
 <a href="#" v-scroll-to="'#texttop'"><v-btn class="btn" id="more" color="primary">Learn More</v-btn></a>
@@ -18,37 +18,37 @@
 Decentralized Digital Item Exchange
 </div>
 </v-flex>
-<v-flex xs6>
+<v-flex xs12 md6>
 <div class="textc">
 <div class="textc-title">Buy and Sell Digital Items Peer-to-Peer</div>
 Trade any kind of digital item — gift cards, game codes, rare virtual kittens, even smart contracts — with anyone in the world. All you need is an internet connection.
 </div>
 </v-flex>
-<v-flex xs6>
+<v-flex xs12 md6>
 <div class="imgc"><img src="/img/peer-to-peer.png" class="img" /></div>
 </v-flex>
-<v-flex xs6>
+<v-flex xs12 md6>
 <div class="imgc"><img src="/img/executives.png" class="img" /></div>
 </v-flex>
-<v-flex xs6>
+<v-flex xs12 md6>
 <div class="textc">
 <div class="textc-title">Avoid Rent-Seeking Intermediaries</div>
 Trades on the Wyvern Exchange are settled peer-to-peer over the Ethereum network, no Paypal fee required. You never need to trust us with your funds, and the complete protocol implementation is publicly auditable.
 </div>
-</v-flex xs6>
-<v-flex xs6>
+</v-flex xs12 md6>
+<v-flex xs12 md6>
 <div class="textc">
 <div class="textc-title">Automate Your Commerce</div>
 Pick whichever method of sale you prefer: fixed price, English auction, Dutch auction, or something more exotic. Interface with the Exchange through a website, a mobile application, or a custom script.
 </div>
 </v-flex>
-<v-flex xs6>
+<v-flex xs12 md6>
 <div class="imgc"><img src="/img/coding.png" class="img" /></div>
 </v-flex>
-<v-flex xs6>
+<v-flex xs12 md6>
 <div class="imgc"><img src="/img/voting.png" class="img" /></div>
 </v-flex>
-<v-flex xs6>
+<v-flex xs12 md6>
 <div class="textc">
 <div class="textc-title">Autonomously Governed and Arbitrated</div>
 The Wyvern Exchange protocol is controlled by a distributed autonomous organization which arbitrates disputes, manages exchange operation, and furthers strategic development. Anyone who wants can become a shareholder and take part in the governance process.
@@ -60,6 +60,8 @@ The Wyvern Exchange protocol is controlled by a distributed autonomous organizat
 </template>
 
 <script>
+import MobileDetect from 'mobile-detect'
+
 export default {
   metaInfo: {
     title: 'Home'
@@ -70,6 +72,10 @@ export default {
     }
   },
   mounted: function() {
+    if (new MobileDetect(window.navigator.userAgent).mobile()) {
+      document.getElementById('buttons').style.display = 'none'
+      return;
+    }
     var seriously = new Seriously();
     document.getElementById('canvas').height = window.innerHeight - 100;
     document.getElementById('center').style.height = (window.innerHeight - 100) + 'px';
@@ -166,7 +172,9 @@ export default {
 }
 
 .cgrid {
-  width: 800px;
+  max-width: 900px;
+  padding-left: 1em;
+  padding-right: 1em;
   padding-bottom: 5em;
   font-size: 1.5em;
 }
@@ -179,10 +187,10 @@ export default {
 .imgc {
   width: 400px;
   margin: 0 auto;
+  margin-top: -5em;
 }
 
 .textc {
-  padding-top: calc(30%);
 }
 
 .textc-title {
@@ -195,5 +203,6 @@ export default {
   font-variant: small-caps;
   text-align: center;
   padding-top: 1em;
+  padding-bottom: 2em;
 }
 </style>

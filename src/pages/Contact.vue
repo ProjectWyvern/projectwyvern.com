@@ -19,8 +19,8 @@ export default {
 .contact {
   margin: 0 auto;
   color: #fff;
-  width: 800px;
-  padding-top: 2em;
+  max-width: 800px;
+  padding: 2em;
   font-size: 1.2em;
 }
 

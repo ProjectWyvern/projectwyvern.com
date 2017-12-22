@@ -18,11 +18,11 @@ export default {
 
 <style scoped>
 .about {
-  width: 800px;
+  max-width: 800px;
+  padding: 2em;
   margin: 0 auto;
   font-size: 1.2em;
   background: #000;
-  padding-top: 2em;
   color: #fff;
 }
 
