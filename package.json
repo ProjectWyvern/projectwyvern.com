@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "poi": "^9.5.5"
+  },
+  "dependencies": {
+    "seriously": "^1.0.0",
+    "vue": "^2.5.13",
+    "vue-analytics": "^5.7.1",
+    "vue-awesome": "^2.3.4",
+    "vue-meta": "^1.4.0",
+    "vue-router": "^3.0.1",
+    "vue-scrollto": "^2.8.0",
+    "vue-template-compiler": "^2.5.13",
+    "vuetify": "^0.17.5"
+  },
+  "scripts": {
+    "build": "scripts/build.sh"
+  }
+}
