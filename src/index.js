@@ -18,11 +18,12 @@ Vue.use(VueRouter)
 Vue.use(VueMeta)
 Vue.use(VueScrollTo)
 
-Vue.use(VueAnalytics, {
-  id: 'UA-98270549-3'
-})
-
 const router = new VueRouter({ routes: routes, mode: 'history' })
+
+Vue.use(VueAnalytics, {
+  id: 'UA-98270549-3',
+  router
+})
 
 /* eslint-disable no-new */
 new Vue({
