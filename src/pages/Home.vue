@@ -54,6 +54,9 @@ Pick whichever method of sale you prefer: fixed price, English auction, Dutch au
 The Wyvern Exchange protocol is controlled by a distributed autonomous organization which arbitrates disputes, manages exchange operation, and furthers strategic development. Anyone who wants can become a shareholder and take part in the governance process.
 </div>
 </v-flex>
+<v-flex xs12 md12>
+<iframe src="https://landing.mailerlite.com/webforms/landing/t4d5g6" style="margin: 0 auto; border: none; width: 460px; height: 220px; display: block; overflow: hidden;"></iframe>
+</v-flex>
 </v-layout>
 </v-container>
 </div>
