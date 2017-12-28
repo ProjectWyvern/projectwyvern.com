@@ -2,6 +2,7 @@
 <div class="app-container">
 <div class="header">
 <div class="header-inner">
+<router-link to="/">
 <img class="thumb" src="/img/thumb.png" />
 <div class="header-title hidden-xs-only">
 Project Wyvern
@@ -9,6 +10,7 @@ Project Wyvern
 <div class="header-title-sm hidden-sm-and-up">
 Project Wyvern
 </div>
+</router-link>
 <div class="header-links">
 <router-link class="header-link" to="/"><v-icon medium>home</v-icon></router-link>
 <router-link class="header-link" to="/about"><v-icon medium>help</v-icon></router-link>
