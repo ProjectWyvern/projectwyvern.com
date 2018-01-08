@@ -44,6 +44,7 @@ Project Wyvern
 <div class="app-footer-right-second">
 </div>
 <div class="app-footer-right-middle">
+<a target="_blank" href="https://www.reddit.com/r/projectwyvern/"><icon class="social-icon" name="reddit" scale="2" /></a>
 <a target="_blank" href="https://www.facebook.com/WyvernExchange/"><icon class="social-icon" name="facebook" scale="2" /></a>
 <a target="_blank" href="https://twitter.com/wyvernexchange"><icon class="social-icon" name="twitter" scale="2" /></a>
 <a target="_blank" href="https://medium.com/project-wyvern"><icon class="social-icon" name="medium" scale="2" /></a>
@@ -227,8 +228,8 @@ a:visited {
 }
 
 .social-icon {
-  margin-left: 0.7em;
-  margin-right: 0.7em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 .footer-link {
