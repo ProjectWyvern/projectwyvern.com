@@ -50,6 +50,8 @@ Project Wyvern
 <a target="_blank" href="https://medium.com/project-wyvern"><icon class="social-icon" name="medium" scale="2" /></a>
 <a target="_blank" href="https://github.com/projectwyvern"><icon class="social-icon" name="github" scale="2" /></a>
 <a target="_blank" href="https://riot.im/app/#/room/#projectwyvern:matrix.org"><icon class="social-icon" name="comments" scale="2" /></a>
+<a target="_blank" href="https://discord.gg/dZZdybs"><img src="/img/discord.svg" width="30" height="30" stroke="#fff" class="icon-image social-icon" /></a>
+<a target="_blank" href="https://t.me/projectwyvern"><icon class="social-icon" name="telegram" scale="2" /></a>
 </div>
 <div class="app-footer-right-bottom">
 <a target="_blank" href="http://judecoram.com/">Site designed by Jude Coram</a>
@@ -240,5 +242,10 @@ a:visited {
 .app-footer-right-bottom {
   font-size: 0.9em;
   text-align: center;
+}
+
+.icon-image {
+  -webkit-filter: invert(1);
+  filter: invert(1);
 }
 </style>
