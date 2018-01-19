@@ -2,7 +2,7 @@ module.exports = (options, req) => ({
   entry: './src/index.js',
   html: {
     title: 'Project Wyvern',
-    description: 'Autonomouly governed decentralized digital item exchange running on the Ethereum blockchain.',
+    description: 'Decentralized digital asset exchange protocol. Exchange any asset representable on the Ethereum blockchain, from virtual kittens to smart contracts. Autonomously governed by the Wyvern DAO.',
     template: 'src/index.ejs'
   }
 })
