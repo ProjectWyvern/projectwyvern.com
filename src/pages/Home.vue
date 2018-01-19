@@ -15,7 +15,7 @@
 <v-layout row wrap>
 <v-flex xs12>
 <div id="texttop">
-Decentralized Digital Asset Exchange Protocol
+Decentralized Digital Asset Exchange
 </div>
 </v-flex>
 <v-flex xs12 md6>
