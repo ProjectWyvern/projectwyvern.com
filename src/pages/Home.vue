@@ -15,13 +15,13 @@
 <v-layout row wrap>
 <v-flex xs12>
 <div id="texttop">
-Decentralized Digital Item Exchange
+Decentralized Digital Asset Exchange Protocol
 </div>
 </v-flex>
 <v-flex xs12 md6>
 <div class="textc">
-<div class="textc-title">Buy and Sell Digital Items Peer-to-Peer</div>
-Trade any kind of digital item — gift cards, game codes, rare virtual kittens, even smart contracts — with anyone in the world. All you need is an internet connection.
+<div class="textc-title">Buy and Sell Digital Assets Peer-to-Peer</div>
+Trade any kind of nonfungible digital item — gift cards, game codes, rare virtual kittens, even smart contracts — with anyone in the world. All you need is an internet connection.
 </div>
 </v-flex>
 <v-flex xs12 md6>
@@ -51,7 +51,7 @@ Pick whichever method of sale you prefer: fixed price, English auction, Dutch au
 <v-flex xs12 md6>
 <div class="textc">
 <div class="textc-title">Autonomously Governed and Arbitrated</div>
-The Wyvern Exchange protocol is controlled by a distributed autonomous organization which arbitrates disputes, manages exchange operation, and furthers strategic development. Anyone who wants can become a shareholder and take part in the governance process.
+The Wyvern Protocol is controlled by a distributed autonomous organization which arbitrates disputes, manages exchange operation, and furthers strategic development. Anyone who wants can become a shareholder and take part in the governance process.
 </div>
 </v-flex>
 <!--
