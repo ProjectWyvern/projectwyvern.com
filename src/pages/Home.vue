@@ -21,7 +21,7 @@ Decentralized Digital Asset Exchange
 <v-flex xs12 md6>
 <div class="textc">
 <div class="textc-title">Buy and Sell Digital Assets Peer-to-Peer</div>
-Trade any kind of nonfungible digital item — gift cards, game codes, rare virtual kittens, even smart contracts — with anyone in the world. All you need is an internet connection.
+Trade any kind of nonfungible digital asset — rare virtual kittens, ENS names, land rights, even smart contracts — with anyone in the world. All you need is an internet connection.
 </div>
 </v-flex>
 <v-flex xs12 md6>
@@ -33,13 +33,13 @@ Trade any kind of nonfungible digital item — gift cards, game codes, rare virt
 <v-flex xs12 md6>
 <div class="textc">
 <div class="textc-title">Avoid Rent-Seeking Intermediaries</div>
-Trades on the Wyvern Exchange are settled peer-to-peer over the Ethereum network, no Paypal fee required. You never need to trust us with your funds, and the complete protocol implementation is publicly auditable.
+Trades on the Wyvern Exchange are settled peer-to-peer over the Ethereum network, no Paypal fee required. You never need to trust us with your funds or assets, and the complete protocol implementation is publicly auditable.
 </div>
 </v-flex xs12 md6>
 <v-flex xs12 md6>
 <div class="textc">
 <div class="textc-title">Automate Your Commerce</div>
-Pick whichever method of sale you prefer: fixed price, English auction, Dutch auction, or something more exotic. Interface with the Exchange through a website, a mobile application, or a custom script.
+Pick whichever method of sale you prefer: fixed price, Dutch auction, or something more exotic. Interface with the Exchange through a website, a mobile application, or a custom script.
 </div>
 </v-flex>
 <v-flex xs12 md6>
