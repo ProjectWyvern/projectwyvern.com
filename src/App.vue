@@ -4,17 +4,16 @@
 <div class="header-inner">
 <router-link to="/">
 <img class="thumb" src="/img/thumb.png" />
-<div class="header-title hidden-xs-only">
-Project Wyvern
-</div>
-<div class="header-title-sm hidden-sm-and-up">
-Project Wyvern
+<div class="header-title">
+Wyvern Protocol
 </div>
 </router-link>
 <div class="header-links">
-<router-link class="header-link" to="/"><v-icon medium>home</v-icon></router-link>
-<router-link class="header-link" to="/about"><v-icon medium>help</v-icon></router-link>
-<router-link class="header-link" to="/contact"><v-icon medium>mail</v-icon></router-link>
+<router-link class="header-link" to="/developers">Developers</router-link>
+<router-link class="header-link" to="/about">About</router-link>
+<a target="_blank" class="header-link" href="https://medium.com/project-wyvern">Blog</a>
+<a target="_blank" class="header-link" href="https://wiki.projectwyvern.com">Wiki</a>
+<a target="_blank" class="header-link" href="https://exchange.projectwyvern.com">Exchange</a>
 </div>
 </div>
 </div>
@@ -22,40 +21,36 @@ Project Wyvern
 <router-view>
 </router-view>
 </div>
-<div class="app-footer">
-<div class="app-footer-inner">
-<div class="app-footer-left hidden-xs-only">
-<img class="app-footer-thumb" src="/img/thumb-large.png" />
-<div class="app-footer-left-bottom">
-<div class="app-footer-left-bottom-top">Project Wyvern</div>
-© Project Wyvern Developers
+<div class="footer">
+<div class="footer-inner">
+<div class="footer-top">
+<div class="footer-left">
+<img class="footer-thumb" src="/img/thumb-large.png" />
+<div class="footer-left-bottom">
+Wyvern Protocol
 </div>
 </div>
-<div class="app-footer-right">
-<div class="app-footer-right-top">
-<router-link class="footer-link" to="/">Home</router-link>
-<router-link class="footer-link" to="/about">About</router-link>
-<router-link class="footer-link" to="/contact">Contact</router-link>
+<div class="footer-right">
+<div class="footer-right-left">
+<div class="footer-header">Community</div>
+<a target="_blank" class="footer-link" href="https://medium.com/project-wyvern">Blog</a>
+<a target="_blank" class="footer-link" href="https://discord.gg/dZZdybs">Discord</a>
+<a target="_blank" class="footer-link" href="https://twitter.com/wyvernprotocol">Twitter</a>
+<a target="_blank" class="footer-link" href="https://www.reddit.com/r/projectwyvern/">Reddit</a>
+</div>
+<div class="footer-right-right">
+<div class="footer-header">Resources</div>
+<a target="_blank" class="footer-link" href="https://github.com/ProjectWyvern/wyvern-protocol/blob/master/build/whitepaper.pdf">Whitepaper</a>
+<a target="_blank" class="footer-link" href="https://wiki.projectwyvern.com">Wiki</a>
+<a target="_blank" class="footer-link" href="https://github.com/projectwyvern">GitHub</a>
 <a target="_blank" class="footer-link" href="https://exchange.projectwyvern.com">Exchange</a>
 <a target="_blank" class="footer-link" href="https://dao.projectwyvern.com">DAO</a>
 <a target="_blank" class="footer-link" href="https://token.projectwyvern.com">Token</a>
-<a target="_blank" class="footer-link" href="https://github.com/ProjectWyvern/wyvern-protocol/blob/master/build/whitepaper.pdf">Whitepaper</a>
 </div>
-<div class="app-footer-right-second">
 </div>
-<div class="app-footer-right-middle">
-<a target="_blank" href="https://www.reddit.com/r/projectwyvern/"><icon class="social-icon" name="reddit" scale="2" /></a>
-<a target="_blank" href="https://www.facebook.com/WyvernExchange/"><icon class="social-icon" name="facebook" scale="2" /></a>
-<a target="_blank" href="https://twitter.com/wyvernprotocol"><icon class="social-icon" name="twitter" scale="2" /></a>
-<a target="_blank" href="https://medium.com/project-wyvern"><icon class="social-icon" name="medium" scale="2" /></a>
-<a target="_blank" href="https://github.com/projectwyvern"><icon class="social-icon" name="github" scale="2" /></a>
-<a target="_blank" href="https://riot.im/app/#/room/#projectwyvern:matrix.org"><icon class="social-icon" name="comments" scale="2" /></a>
-<a target="_blank" href="https://discord.gg/dZZdybs"><img src="/img/discord.svg" width="30" height="30" stroke="#fff" class="icon-image social-icon" /></a>
-<a target="_blank" href="https://t.me/projectwyvern"><icon class="social-icon" name="telegram" scale="2" /></a>
 </div>
-<div class="app-footer-right-bottom">
-<a target="_blank" href="http://judecoram.com/">Site designed by Jude Coram</a>
-</div>
+<div class="footer-bottom">
+<div class="footer-bottom-inner">© 2017-2018 Wyvern Protocol Developers</div>
 </div>
 </div>
 </div>
@@ -74,7 +69,7 @@ export default {
 
 <style>
 html, body {
-  background: #000;
+  background: #fff;
   width: 100%;
   height: 100%;
   padding: 0;
@@ -87,11 +82,11 @@ html, body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #000; 
+  background: #fff; 
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #fff; 
+  background: #444; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -99,12 +94,12 @@ html, body {
 }
 
 a {
-  color: #fff;
   text-decoration: none;
 }
 
-.footer-link:hover {
-  text-decoration: underline;
+a:hover {
+  color: #777;
+  text-decoration: none;
 }
 
 a:visited {
@@ -120,7 +115,15 @@ a:visited {
   height: 100px;
   width: 100%;
   color: #fff;
-  background: #000;
+  background: #444;
+}
+
+.header a {
+  color: #fff;
+}
+
+.header a:hover {
+  color: #aaa;
 }
 
 .header-inner {
@@ -141,19 +144,10 @@ a:visited {
   font-weight: bold;
 }
 
-.header-title-sm {
-  height: 100px;
-  line-height: 100px;
-  display: inline-block;
-  font-size: 1.3em;
-  font-variant: small-caps;
-  font-weight: bold;
-}
-
 .thumb {
   margin-left: 20px;
   position: relative;
-  top: 13px;
+  top: -8px;
   margin-right: 20px;
   display: inline-block;
 }
@@ -167,64 +161,93 @@ a:visited {
 
 .content {
   width: 100%;
-  min-height: calc(100% - 300px);
-  background: #000;
+  min-height: calc(100% - 400px);
+  background: #fff;
 }
 
-.app-footer {
-  height: 200px;
+.footer {
+  height: 300px;
   width: 100%;
   color: #fff;
-  background: #000;
+  background: #444;
 }
 
-.app-footer-inner {
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #aaa;
+}
+
+.footer-inner {
   max-width: 800px;
   margin: 0 auto;
+  display: block;
 }
 
-.app-footer-thumb {
+.footer-top {
+  display: block;
+  height: 250px;
+}
+
+.footer-thumb {
   position: relative;
   top: 10px;
   left: 50px;
 }
 
-.app-footer-left {
+.footer-left {
   width: 220px;
+  height: 250px;
   padding-left: 1em;
+  padding-top: 1em;
   display: inline-block;
 }
 
-.app-footer-left-bottom {
+.footer-left-bottom {
   position: relative;
   top: 2em;
   text-align: center;
   line-height: 2em;
 }
 
-.app-footer-left-bottom-top {
+.footer-left-bottom-top {
   font-size: 2em;
   margin-bottom: 0.3em;
   font-variant: small-caps;
 }
 
-.app-footer-right {
-  padding-right: 2em;
+.footer-right {
+  margin-top: 1em;
   float: right;
 }
 
-.app-footer-right-top {
+.footer-right-left {
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+}
+
+.footer-right-right {
+  float: right;
+  width: 250px;
+  height: 200px;
+  display: inline-block;
+}
+
+.footer-right-top {
   margin-top: 1em;
 }
 
-.app-footer-right-top, .app-footer-right-second {
+.footer-right-top, .footer-right-second {
   margin-top: 1em;
   font-size: 0.9em;
   font-weight: bold;
   text-align: center;
 }
 
-.app-footer-right-middle {
+.footer-right-middle {
   margin-top: 4em;
   margin-bottom: 4em;
 }
@@ -234,18 +257,32 @@ a:visited {
   margin-right: 0.5em;
 }
 
-.footer-link {
-  margin-left: 0.2em;
-  margin-right: 0.2em;
+.footer-header {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
 }
 
-.app-footer-right-bottom {
+.footer-link {
+  display: block;
+}
+
+.footer-right-bottom {
   font-size: 0.9em;
   text-align: center;
 }
 
-.icon-image {
-  -webkit-filter: invert(1);
-  filter: invert(1);
+.footer-bottom {
+  width: 100%;
+  color: #fff;
+  background: #444;
+  height: 50px;
+  padding-top: 0.5em;
+}
+
+.footer-bottom-inner {
+  width: 800px;
+  position: absolute;
+  padding-left: 250px;
 }
 </style>
