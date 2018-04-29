@@ -1,21 +1,27 @@
 <template>
 <div class="app-container">
 <div class="header">
-<div class="header-inner">
+<b-navbar toggleable="md" type="dark" class="header-inner">
+<b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 <router-link to="/">
+<b-navbar-brand>
 <img class="thumb" src="/img/thumb.png" />
 <div class="header-title">
 Wyvern Protocol
 </div>
+</b-navbar-brand>
 </router-link>
-<div class="header-links">
+<b-collapse is-nav id="nav_collapse">
+<b-navbar-nav class="ml-auto">
 <router-link class="header-link" to="/developers">Developers</router-link>
 <router-link class="header-link" to="/about">About</router-link>
+<router-link class="header-link" to="/comparision">Comparision</router-link>
 <a target="_blank" class="header-link" href="https://medium.com/project-wyvern">Blog</a>
 <a target="_blank" class="header-link" href="https://wiki.projectwyvern.com">Wiki</a>
 <a target="_blank" class="header-link" href="https://exchange.projectwyvern.com">Exchange</a>
-</div>
-</div>
+</b-navbar-nav>
+</b-collapse>
+</b-navbar>
 </div>
 <div class="content">
 <router-view>
@@ -127,8 +133,11 @@ a:visited {
 }
 
 .header-inner {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -1em;
+  top: -0.5em;
 }
 
 .header-link {
@@ -139,7 +148,7 @@ a:visited {
   height: 100px;
   line-height: 100px;
   display: inline-block;
-  font-size: 2em;
+  font-size: 1.5em;
   font-variant: small-caps;
   font-weight: bold;
 }
@@ -150,13 +159,6 @@ a:visited {
   top: -8px;
   margin-right: 20px;
   display: inline-block;
-}
-
-.header-links {
-  margin-right: 1em;
-  display: inline-block;
-  float: right;
-  line-height: 100px;
 }
 
 .content {

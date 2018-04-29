@@ -54,8 +54,11 @@
   <b-row>
     <b-col>
       <div class="wyvern-exchange-header">Wyvern Exchange — Powered by Wyvern</div>
-      <div class="wyvern-exchange-subheader">
+      <!--<div class="wyvern-exchange-subheader">
       These are real orders, embedded directly into this website. If you have Metamask, you can match them!
+      </div>-->
+      <div class="wyvern-exchange-subheader">
+      The Wyvern Exchange is a protocol testbed, demonstrating the flexibility & functionality of Wyvern.
       </div>
     </b-col>
   </b-row>
